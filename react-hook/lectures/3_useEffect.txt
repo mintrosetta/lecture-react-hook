@@ -1,0 +1,21 @@
+useEffect
+    เป็น hook ที่เอาไว้จัดเกี่ยวกับ Side effect 
+
+    useEffect(call_back, array_dependencies);
+
+Side effect
+    เป็นการบอก react ว่าจะให้ทำอะไร เมื่อเกิดการ render ในครั้งแรก
+    เช่น 
+        1. การ fetch api
+        2. แก้ไข dom โดยตรง
+        3. ทำงานกับ local storage ใน browser
+    เกิดขึ้นภายนอก scope ของ function ที่มีการประมวลผลอยู่
+
+    และมีอีกกรณ๊นึงคือ เราสามารถระบุ dependencies ที่เป็น state เมื่อให้ useEffect ทำงาน
+    เมื่อมีการเปลี่ยนแปลง state ได้
+
+    const [data, setData] = useState(0);
+    useEffect(() => {
+        // code execute after data state has change
+    }, [data]);
+

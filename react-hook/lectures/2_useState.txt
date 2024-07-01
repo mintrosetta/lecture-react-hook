@@ -1,0 +1,4 @@
+useState
+    ใช้สำหรับจัดเก็บข้อมูลที่เราต้องการติดตามการเปลี่ยนแปลงของข้อมูล
+
+    const [state, setState] = useState(default_value);
