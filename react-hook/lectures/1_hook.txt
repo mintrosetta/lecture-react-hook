@@ -1,0 +1,9 @@
+React Hook
+    การที่ react จะมาใช้แบบ function component จะเป็นแบบ class component มาก่อน
+
+Role of hook
+    1. ไม่เรียกใช้ hook ภายใน loop หรือ ภายในเงื่อนไขหรือฟังก์ชันที่ซ้อนกัน
+    2. ควรประกาศหรือเรียกใช้ที่ top ของ component 
+    3. เรียกใช้ hook จาก react function component เท่านั้น
+    4. ไม่เรียกใช้ hook จาก function ปกติ (ใช้ใน function component)
+    5. hook สามารถเรียกใช้ hook ตัวอื่น ๆ ได้
