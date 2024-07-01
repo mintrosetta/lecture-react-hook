@@ -1,0 +1,9 @@
+useRef
+    ทำให้ไม่มีการ re-render component ใหม่เมื่อมีการเปลี่ยนแปลงข้อมูล
+    (useState จะ re-render ทุกครั้งที่ state เปลี่ยนไป)
+
+    จะต้องกำหนด initial value
+
+    สามารถเข้าถึง dom element ได้โดยการใช้ useRef
+
+    สามารถใช้ในการติดตามการเปลี่ยนแปลงของ state ได้ โดยไม่มีการ re-render ใหม่

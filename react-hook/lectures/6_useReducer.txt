@@ -1,0 +1,5 @@
+useReducer
+    คล้ายกับ useState ทำให้สามารถ custom state logic ได้ เพื่อจัดการ state ที่มีความซับซ้อน
+
+dispatch
+    เป็นฟังก์ชันที่จะเอามา update state

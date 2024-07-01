@@ -7,3 +7,5 @@ Rule of hook
     3. เรียกใช้ hook จาก react function component เท่านั้น
     4. ไม่เรียกใช้ hook จาก function ปกติ (ใช้ใน function component)
     5. hook สามารถเรียกใช้ hook ตัวอื่น ๆ ได้
+
+// https://www.youtube.com/watch?v=UsZiCI11Fp4
