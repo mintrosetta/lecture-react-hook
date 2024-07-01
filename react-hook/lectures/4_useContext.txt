@@ -1,0 +1,18 @@
+useContext
+    เอาไว้จัดการ state ระดับ global
+
+createContext
+    สร้าง state แบบ global
+
+    App.jsx
+        const ProviderContext = createContext();
+
+        <ProviderContext.Provider value={value}>
+            // defind component use global state
+        </ProviderContext.Provider>
+
+    Child.jsx 
+        import ProviderContext from 'App.jsx';
+
+        // get value from global state
+        const value = useContext(ProviderContext)    

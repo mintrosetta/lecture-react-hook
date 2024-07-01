@@ -1,7 +1,11 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useState, createContext } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import UseContextExam from './components/UseContextExam';
+
+// ผู้ให้ข้อมูล (provider)
+export const UserContext = createContext();
 
 function App() {
   const [count, setCount] = useState(0);
@@ -28,6 +32,10 @@ function App() {
 
   return (
     <>
+      <UserContext.Provider value={"Rosetta"}>
+        <UseContextExam />
+      </UserContext.Provider>
+
       <div>
         <a href="https://vitejs.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
